@@ -35,6 +35,10 @@
   font-size: 30px;
 }
 
+#copy{
+  color: rgba(153, 211, 252, 0.84)
+}
+
 
 body{
   animation-name: whole;
