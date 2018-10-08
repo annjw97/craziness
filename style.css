@@ -1,0 +1,179 @@
+/* The navigation bar */
+/*.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    /*top: 0; /* Position the navbar at the top of the page */
+    /*width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+/*.navbar a {
+    float: left;
+    display: run-in;
+    /* display: block; */
+  /*  color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    opacity: .5;
+}*/
+
+/* Change background on mouse-over */
+/*.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* Main content */
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+#intro{
+  color: white;
+  font-size: 30px;
+}
+
+
+body{
+  animation-name: whole;
+  animation-duration: 8s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+img{
+  width: 700px;
+  height: 500px;
+}
+
+@keyframes whole{
+  0%{
+    background-color: skyblue;
+  }
+
+  100%{
+    background-color: purple;
+  }
+}
+
+/* div{
+  width: 500px;
+  height: 200px;
+  margin: 100px;
+} */
+
+#otter {
+  position: relative;
+  opacity: .2;
+
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-duration: alternate-reverse;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes rotate{
+  0%{
+    border-radius: 0;
+    transform: rotate(0);
+  }
+  100%{
+    border-radius: 100%;
+    transform: rotate(360deg);
+  }
+}
+
+
+#unicorn {
+  opcity: .3;
+
+  animation-name: shrug;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shrug {
+  0%{
+    transform: perspective(100px)
+    rotateY(-40deg);
+  }
+
+  50%{
+    transform: perspective(1000px)
+    rotateY(0);
+  }
+
+  100%{
+    transform: perspective(100px)
+    rotateY(40deg);
+  }
+}
+
+
+#cat {
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  opacity: .5;
+  animation: rolling 10s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes rolling {
+  0%{
+    transform: translate(0,0);
+  }
+
+  33%{
+    transform: translate(1000px,0)
+    rotate(-90deg);
+  }
+
+  66%{
+    transition: translate(500px,-200px)
+    rotate(90deg);
+  }
+
+  100%{
+    transform: translate(300px,400px)
+    rotate(180deg);
+  }
+}
+
+#pianoMusic {
+  opacity: .3;
+}
+
+#spin {
+  opacity: .2;
+  animation: spinGirl 15s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes spinGirl {
+  0%{
+    transform: (0,4000px);
+  }
+
+  33%{
+    transform: translate(90px,100px);
+  }
+
+  66%{
+    transform: translate(-100px, -10000px)
+    rotate(-180deg);
+  }
+
+  100%{
+    transform: translate(100px,900px)
+    rotate(90deg);
+  }
+}
+
+#bunny{
+  opacity: .5;
+}
